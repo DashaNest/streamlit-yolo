@@ -77,7 +77,7 @@ def main():
         
         with col1:
             st.subheader("Оригинал")
-            st.image(image, use_container_width=True)
+            st.image(image)
         
         if st.button("Анализировать изображение"):
             with st.spinner("Обработка..."):
