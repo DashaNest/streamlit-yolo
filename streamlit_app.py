@@ -3,6 +3,16 @@ import requests
 from PIL import Image
 import base64
 import io
+import os
+
+# Отключаем автоперезагрузку программно
+os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
+os.environ["STREAMLIT_SERVER_RUN_ON_SAVE"] = "false"
+
+st.set_page_config(
+    page_title="YOLOv5 Детектор",
+    page_icon="🎯"
+)
 
 st.title("🎯 YOLOv5 Детектор с FastAPI")
 
